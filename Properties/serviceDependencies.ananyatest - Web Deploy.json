@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/NewProjectSimulationapiDemo/apis/NewProjectSimulationDemo",
+      "type": "apis.azure"
+    },
+    "redis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Cache/Redis/ananyaredis",
+      "type": "redis.azure",
+      "connectionId": "CacheConnection",
+      "secretStore": "AzureAppSettings"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ananyaservertest/databases/ananyadb",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:NewProjectSimulationContext",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
